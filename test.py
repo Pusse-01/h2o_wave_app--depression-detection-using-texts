@@ -7,9 +7,11 @@ class TestPrediction(unittest.TestCase):
         """
         Test the predicted label
         """
-        test_cases = 'I need a break'
-        result = predict(test_cases)
-        self.assertEqual(result, 'Depressive')
+        test_cases = ['I need a break']
+        labels = ['Depressive']
+        for i in range(len(test_cases)):
+            result, tips = predict(test_cases[i])
+            self.assertEqual(result, labels[i])
 
 if __name__ == '__main__':
     unittest.main()
