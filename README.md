@@ -35,13 +35,7 @@ Install the virtual environment:
 sudo pip install virtualenv
 ```
 
-Store your virtual environments somewhere:
-
-```bash
-sudo pip install virtualenv
-```
-
-Now you should be able to create a new virtualenv
+Create a new virtualenv
 
 ```bash
 virtualenv -p python3 yourVenv
@@ -59,7 +53,7 @@ Install Requirements:
 pip install -r requirements.txt
 ```
 
-To exit your new virtualenv, just ```bash deactivate ```
+To exit your new virtualenv, just ```deactivate ```
 
 
 ### 3. Run the App
