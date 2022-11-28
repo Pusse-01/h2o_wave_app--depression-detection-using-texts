@@ -7,8 +7,8 @@ class TestPrediction(unittest.TestCase):
         """
         Test the predicted label
         """
-        data = 'I need a break'
-        result = predict(data)
+        test_cases = 'I need a break'
+        result = predict(test_cases)
         self.assertEqual(result, 'Depressive')
 
 if __name__ == '__main__':
